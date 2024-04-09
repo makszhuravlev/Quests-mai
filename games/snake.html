@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Игра на JavaScript</title>
+    <style>
+        body {
+            background-color: #333; /* Темный фон */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            color: #fff; /* Белый цвет текста */
+        }
+        #gameWrapper {
+            display: flex; /* Используем Flexbox для выравнивания */
+            align-items: start; /* Выравниваем элементы по верхнему краю */
+        }
+        #gameText {
+            max-width: 800px; /* Максимальная ширина текстового блока */
+            margin-right: 20px; /* Отступ справа */
+            font-size: 24px; /* Размер шрифта текста */
+        }
+        #gameContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        #restartButton {
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #f00;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div id="gameWrapper">
+        <div id="gameText">
+            <h2>История из жизни</h2>
+            <p>&emsp;Однажды я создал эту игру и пытался набрать 34 очко, но спустя огромное колличество
+                 беуспешных попыток я решил, что это должен сделать кто то другой. Поэтому дорогой мой друг,
+                  я поручаю тебе задачу набрать 34 очко, за это я тебя вознагражу, а чем? Узнаешь сам.</p>
+            <h2>Удачи!</h2>
+        </div>
+        <div id="gameContainer">
+            <canvas id="game" width="608" height="608"></canvas>
+            <button id="restartButton">Перезапуск</button>
+        </div>
+    </div>
+    <script src="snake.js"></script>
+</body>
+</html>

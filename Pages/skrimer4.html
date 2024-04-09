@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="bsod.css ">
+</head>
+<title>АХАХАХАХАХАХАХАХАХАХХАХАХА</title>
+<style>
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+<body>
+
+    <video autoplay muted loop id="myVideo">
+        <source src="../dist/sk/aaaaa.mp4" type="video/mp4">
+      </video>
+      
+
+
+<script>
+        // Получить видео
+        var video = document.getElementById("myVideo");
+        
+        // Получить кнопку
+        var btn = document.getElementById("myBtn");
+        
+        // Приостановите и воспроизведите видео, а также измените текст кнопки
+        function myFunction() {
+          if (video.paused) {
+            video.play();
+            btn.innerHTML = "Пауза";
+          } else {
+            video.pause();
+            btn.innerHTML = "Воспр";
+          }
+        }
+        </script>
+
+<p>Примечание: Internet Explorer 10 и более ранних версий не поддерживает метод msRequestFullscreen().</p>
+
+</body>
+</html>
+
